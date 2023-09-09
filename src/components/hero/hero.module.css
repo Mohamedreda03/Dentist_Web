@@ -1,0 +1,36 @@
+.hero {
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(15, 32, 39, 70%), rgb(32, 58, 67, 40%), rgb(44, 83, 100, 15%)),url(../../../public/Hero-sec.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 140px;
+}
+
+
+.hero_text {
+    font-size: 120px;
+    /* transform: translateX(-1500px); */
+    color: white;
+    line-height: 100px;
+    background: -webkit-linear-gradient(white,#e8eeef);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    transition: 0.8s;
+
+}
+
+@media (width < 400) {
+    .hero_text {
+        font-size: 20px;
+    }
+}
+
+.hero_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
