@@ -19,7 +19,7 @@ const Services = () => {
 
                 {/* ............ */}
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[50px] gap-y-[35px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[50px] gap-y-[40px]">
                     <div
                         className="opacity-0 transform translate-y-[100px] transition duration-1000 delay-[0.4s]"
                         ref={ref}
@@ -146,15 +146,22 @@ const Services = () => {
                 </div>
             </div>
             {/* .................................... */}
-            <Link
-                href={"/"}
-                className="rounded-md my-[180px] bg-[#e8eeef] text-black/80 py-[40px] flex flex-col md:flex-row justify-between items-center max-w-[1380px] mx-auto px-[80px] max-h-[400px]">
-                <div className="text-[100px] font-extrabold">SALE</div>
-                <div className="text-[50px] font-semibold" lang="ar" dir="rtl">
-                    <h4>شوف عروض مركز النخبة</h4>
-                </div>
-                {/* <img src="/sale.jpg" alt="" className="w-[50%]" /> */}
-            </Link>
+            <div className="px-[30px]">
+                <Link
+                    href={"/"}
+                    className="rounded-md my-[180px] bg-[#e8eeef] text-black/80 py-[40px] flex flex-col md:flex-row justify-between items-center max-w-[1380px] mx-auto px-[80px]">
+                    <div className="text-[70px] md:text-[100px] font-extrabold">
+                        SALE
+                    </div>
+                    <div
+                        className="text-[25px] text-center md:text-[50px] font-semibold"
+                        lang="ar"
+                        dir="rtl">
+                        <h4>شوف عروض مركز النخبة</h4>
+                    </div>
+                    {/* <img src="/sale.jpg" alt="" className="w-[50%]" /> */}
+                </Link>
+            </div>
         </>
     );
 };
