@@ -35,28 +35,38 @@ const MobileNav = () => {
                         <Link href={"/"} onClick={() => setShowMenu(false)}>
                             <li className="hover:text-black">الرئيسيه</li>
                         </Link>
-                        <Link href={"/"} onClick={() => setShowMenu(false)}>
+                        <Link
+                            href={"/about"}
+                            onClick={() => setShowMenu(false)}>
                             <li className="hover:text-black">عن المركز</li>
                         </Link>
-                        <Link href={"/"} onClick={() => setShowMenu(false)}>
+                        <Link href={"/team"} onClick={() => setShowMenu(false)}>
                             <li className="hover:text-black">الفريق الطبى</li>
                         </Link>
-                        <Link href={"/"} onClick={() => setShowMenu(false)}>
+                        <Link
+                            href={"/services"}
+                            onClick={() => setShowMenu(false)}>
                             <li className="hover:text-black">الخدمات</li>
                         </Link>
-                        <Link href={"/"} onClick={() => setShowMenu(false)}>
+                        <Link
+                            href={"/reviews"}
+                            onClick={() => setShowMenu(false)}>
                             <li className="hover:text-black">أراء العملاء</li>
                         </Link>
-                        <Link href={"/"} onClick={() => setShowMenu(false)}>
+                        <Link
+                            href={"/offers"}
+                            onClick={() => setShowMenu(false)}>
                             <li className="hover:text-black">العروض</li>
                         </Link>
-                        <Link href={"/"} onClick={() => setShowMenu(false)}>
+                        <Link
+                            href={"/articles"}
+                            onClick={() => setShowMenu(false)}>
                             <li className="hover:text-black">المقالات</li>
                         </Link>
                     </ul>
                     <Link
                         onClick={() => setShowMenu(false)}
-                        href={"/"}
+                        href={"/booking"}
                         className="text-[22px] font-semibold bg-white px-[25px] py-[15px] rounded-md">
                         أحجز موعد
                     </Link>

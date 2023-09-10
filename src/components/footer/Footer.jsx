@@ -34,32 +34,37 @@ const Footer = () => {
                             الرئيسية
                         </Link>
                         <Link
-                            href={"/"}
+                            href={"/about"}
                             className="font-oswald font-medium uppercase cursor-pointer">
                             عن المركز
                         </Link>
                         <Link
-                            href={"/"}
+                            href={"/team"}
                             className="font-oswald font-medium uppercase cursor-pointer">
                             الفريق الطبي
                         </Link>
                         <Link
-                            href={"/"}
+                            href={"/services"}
                             className="font-oswald font-medium uppercase cursor-pointer">
-                            نتائج زراعة الاسنان
+                            الخدمات
                         </Link>
                         <Link
-                            href={"/"}
+                            href={"/reviews"}
+                            className="font-oswald font-medium uppercase cursor-pointer">
+                            أراء العملاء
+                        </Link>
+                        <Link
+                            href={"/articles"}
                             className="font-oswald font-medium uppercase cursor-pointer">
                             المقالات
                         </Link>
                         <Link
-                            href={"/"}
+                            href={"/offers"}
                             className="font-oswald font-medium uppercase cursor-pointer">
                             العروض
                         </Link>
                         <Link
-                            href={"/"}
+                            href={"/booking"}
                             className="font-oswald font-medium uppercase cursor-pointer">
                             اتصل بنا
                         </Link>
@@ -71,24 +76,24 @@ const Footer = () => {
                         <div className="font-oswald font-semibold text-[22px]">
                             التخصصات
                         </div>
-                        <Link href={"/"} className="font-oswald font-medium">
+                        <div className="font-oswald font-medium">
                             علاج جزور الأسنان
-                        </Link>
-                        <Link href={"/"} className="font-oswald font-medium">
+                        </div>
+                        <div className="font-oswald font-medium">
                             طب أسنان الأطفال
-                        </Link>
-                        <Link href={"/"} className="font-oswald font-medium">
+                        </div>
+                        <div className="font-oswald font-medium">
                             زراعة الأسنان
-                        </Link>
-                        <Link href={"/"} className="font-oswald font-medium">
+                        </div>
+                        <div className="font-oswald font-medium">
                             تقويم الأسنان
-                        </Link>
-                        <Link href={"/"} className="font-oswald font-medium">
+                        </div>
+                        <div className="font-oswald font-medium">
                             تجميل الأسنان
-                        </Link>
-                        <Link href={"/"} className="font-oswald font-medium">
+                        </div>
+                        <div className="font-oswald font-medium">
                             التركيبات الثابتة
-                        </Link>
+                        </div>
                     </div>
                     {/* NORMAL MENU END */}
                     {/* ............... */}

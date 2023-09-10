@@ -3,6 +3,7 @@
 import { useAnimate, useInView, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
+import { josefin_Sans } from "../../fonts";
 
 const Services = () => {
     const ref2 = useRef(null);
@@ -162,7 +163,8 @@ const Services = () => {
                             transform: inView2 ? "translateY(0px)" : "",
                             opacity: inView2 ? 1 : 0,
                         }}>
-                        <div className="text-[70px] md:text-[100px] font-extrabold">
+                        <div
+                            className={`font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-red-600 to-red-500 md:text-[100px] ${josefin_Sans.className}`}>
                             SALE
                         </div>
                         <div
@@ -171,7 +173,6 @@ const Services = () => {
                             dir="rtl">
                             <h4>شوف عروض مركز النخبة</h4>
                         </div>
-                        {/* <img src="/sale.jpg" alt="" className="w-[50%]" /> */}
                     </Link>
                 </div>
             </AnimatePresence>
