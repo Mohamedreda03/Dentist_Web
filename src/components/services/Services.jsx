@@ -155,7 +155,7 @@ const Services = () => {
                 <div className="px-[30px]">
                     <Link
                         ref={ref2}
-                        href={"/"}
+                        href={"/offers"}
                         className="rounded-md my-[180px] bg-[#e8eeef] text-black/80 py-[40px]
                     flex flex-col md:flex-row justify-between items-center max-w-[1380px] mx-auto
                     px-[80px] opacity-0 transform translate-y-[200px] transition duration-[1.5s]"
