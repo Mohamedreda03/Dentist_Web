@@ -19,7 +19,7 @@ const MobileNav = () => {
                 </Link>
                 <HiMenuAlt2
                     onClick={() => setShowMenu(true)}
-                    className={`text-[35px]`}
+                    className={`text-[35px] cursor-pointer`}
                 />
                 <div
                     className={`flex-col justify-center items-center gap-[60px] absolute top-0 left-0 right-0
@@ -28,7 +28,7 @@ const MobileNav = () => {
                  }`}>
                     <AiOutlineClose
                         onClick={() => setShowMenu(false)}
-                        className={`absolute top-[23px] left-[30px] text-[35px]`}
+                        className={`absolute top-[23px] left-[30px] text-[35px] cursor-pointer`}
                     />
 
                     <ul className="flex flex-col items-center gap-[40px] text-[20px] font-semibold text-black/80 ">

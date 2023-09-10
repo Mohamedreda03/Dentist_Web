@@ -1,16 +1,42 @@
-// "use client";
+"use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import MobileNav from "./MobileNav";
 
 const Navbar = () => {
+    const [show, setShow] = useState("translate-y-0");
+    const [lastScrollY, setLastScrollY] = useState(4);
+
+    // ..............................................................................
+
+    const controlNavbar = () => {
+        if (window.scrollY > 200) {
+            if (window.scrollY > lastScrollY) {
+                setShow("-translate-y-[110px]");
+            } else {
+                setShow("shadow-sm");
+            }
+        } else {
+            setShow("translate-y-0");
+        }
+        // ترتيب الاحداث هنا هو ال مخلي قيمت دي اكبر من الي فوق
+        setLastScrollY(window.scrollY);
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", controlNavbar);
+
+        return () => {
+            window.removeEventListener("scroll", controlNavbar);
+        };
+    }, [lastScrollY]);
     return (
         <>
             <div
                 lang="ar"
                 dir="rtl"
-                className="hidden lg:block bg-white bg-gradient-to-r to-[#e8eeef] from-white h-[110px] sticky top-0 z-[1000000] shadow">
+                className={`hidden lg:block bg-white bg-gradient-to-r to-[#e8eeef] from-white transition duration-200 h-[110px] sticky top-0 z-[1000000] ${show}`}>
                 <div className="max-w-[1380px] mx-auto px-[30px] flex justify-between items-center">
                     <div className="flex items-center gap-[60px]">
                         <Link href={"/"}>
