@@ -7,7 +7,7 @@ const Links = () => {
     return (
         <div className="flex gap-4 justify-center md:justify-start">
             <div
-                className="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white hover:bg-black/[0.5] cursor-pointer"
+                className="w-10 h-10 rounded-full bg-black/80 flex items-center justify-center text-white hover:bg-black/70 transition duration-200 cursor-pointer"
                 onClick={() =>
                     window.open(
                         "https://www.facebook.com/alnokhbadental/",
@@ -17,7 +17,7 @@ const Links = () => {
                 <FaFacebookF size={20} />
             </div>
             <div
-                className="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white hover:bg-black/[0.5] cursor-pointer"
+                className="w-10 h-10 rounded-full bg-black/80 flex items-center justify-center text-white hover:bg-black/70 transition duration-200 cursor-pointer"
                 onClick={() => window.open("https://twitter.com", "_blank")}>
                 <FaFacebookMessenger size={20} />
             </div>

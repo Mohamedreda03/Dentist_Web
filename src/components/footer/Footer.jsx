@@ -2,6 +2,8 @@ import React from "react";
 
 import Wrapper from "../wrapper/Wrapper";
 import Links from "../linksFooter/Links";
+import Link from "next/link";
+import { MdLocationPin } from "react-icons/md";
 
 const Footer = () => {
     return (
@@ -15,78 +17,126 @@ const Footer = () => {
                     {/* LOGO */}
                     <div className="flex flex-col gap-3 shrink-0">
                         <img src="/logo.png" alt="fas" className="w-[80px]" />
-                        <p className="w-[200px] text-black">
+                        <p className="w-[200px] text-[16px] font-medium text-black">
                             مركز النخبة لطب وتقويم الأسنان هو مركز رائد في مجال
                             الرعاية الصحية الفموية والأسنان.
                         </p>
                     </div>
                     {/* LOGO END */}
                     {/* MENU START */}
-                    <div className="flex flex-col gap-3 shrink-0 text-black">
-                        <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            Find a store
+                    <div className="flex flex-col gap-3 shrink-0 text-[16px] text-black">
+                        <div className="font-oswald font-semibold text-[22px]">
+                            روابط سريعة
                         </div>
-                        <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            become a partner
-                        </div>
-                        <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            sign up for email
-                        </div>
-                        <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            send us feedback
-                        </div>
-                        <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            student discount
-                        </div>
+                        <Link
+                            href={"/"}
+                            className="font-oswald font-medium uppercase cursor-pointer">
+                            الرئيسية
+                        </Link>
+                        <Link
+                            href={"/"}
+                            className="font-oswald font-medium uppercase cursor-pointer">
+                            عن المركز
+                        </Link>
+                        <Link
+                            href={"/"}
+                            className="font-oswald font-medium uppercase cursor-pointer">
+                            الفريق الطبي
+                        </Link>
+                        <Link
+                            href={"/"}
+                            className="font-oswald font-medium uppercase cursor-pointer">
+                            نتائج زراعة الاسنان
+                        </Link>
+                        <Link
+                            href={"/"}
+                            className="font-oswald font-medium uppercase cursor-pointer">
+                            المقالات
+                        </Link>
+                        <Link
+                            href={"/"}
+                            className="font-oswald font-medium uppercase cursor-pointer">
+                            العروض
+                        </Link>
+                        <Link
+                            href={"/"}
+                            className="font-oswald font-medium uppercase cursor-pointer">
+                            اتصل بنا
+                        </Link>
                     </div>
                     {/* MENU END */}
 
                     {/* NORMAL MENU START */}
-                    <div className="flex gap-[50px] md:gap-[75px] lg:gap-[100px] shrink-0 text-black">
-                        {/* MENU START */}
-                        <div className="flex flex-col gap-3">
-                            <div className="font-oswald font-medium uppercase text-md">
-                                get help
-                            </div>
-                            <div className="text-[15px] font-medium text-black/[0.8] hover:text-black cursor-pointer">
-                                Order Status
-                            </div>
-                            <div className="text-[15px] font-medium text-black/[0.8] hover:text-black cursor-pointer">
-                                Delivery
-                            </div>
-                            <div className="text-[15px] font-medium text-black/[0.8] hover:text-black cursor-pointer">
-                                Returns
-                            </div>
-                            <div className="text-[15px] font-medium text-black/[0.8] hover:text-black cursor-pointer">
-                                Payment Options
-                            </div>
-                            <div className="text-[15px] font-medium text-black/[0.8] hover:text-black cursor-pointer">
-                                Contact Us
-                            </div>
+                    <div className="flex flex-col gap-5 shrink-0 text-[16px] text-black">
+                        <div className="font-oswald font-semibold text-[22px]">
+                            التخصصات
                         </div>
-                        {/* MENU END */}
-
-                        {/* MENU START */}
-                        <div className="flex flex-col gap-3">
-                            <div className="font-oswald font-medium uppercase text-md">
-                                About nike
-                            </div>
-                            <div className="text-[15px] font-medium text-black/[0.8] hover:text-black cursor-pointer">
-                                News
-                            </div>
-                            <div className="text-[15px] font-medium text-black/[0.8] hover:text-black cursor-pointer">
-                                Careers
-                            </div>
-                            <div className="text-[15px] font-medium text-black/[0.8] hover:text-black cursor-pointer">
-                                Investors
-                            </div>
-                            <div className="text-[15px] font-medium text-black/[0.8] hover:text-black cursor-pointer">
-                                Sustainability
-                            </div>
-                        </div>
-                        {/* MENU END */}
+                        <Link href={"/"} className="font-oswald font-medium">
+                            علاج جزور الأسنان
+                        </Link>
+                        <Link href={"/"} className="font-oswald font-medium">
+                            طب أسنان الأطفال
+                        </Link>
+                        <Link href={"/"} className="font-oswald font-medium">
+                            زراعة الأسنان
+                        </Link>
+                        <Link href={"/"} className="font-oswald font-medium">
+                            تقويم الأسنان
+                        </Link>
+                        <Link href={"/"} className="font-oswald font-medium">
+                            تجميل الأسنان
+                        </Link>
+                        <Link href={"/"} className="font-oswald font-medium">
+                            التركيبات الثابتة
+                        </Link>
                     </div>
                     {/* NORMAL MENU END */}
+                    {/* ............... */}
+                    <div className="text-black/80">
+                        <h2 className="text-[22px] font-semibold">إتصل بنا</h2>
+                        <div className="mt-5 flex gap-2">
+                            <div className="">
+                                <MdLocationPin
+                                    size={25}
+                                    className="text-black/80"
+                                />
+                            </div>
+                            <div className="">
+                                <h2 className="text-[18px] font-medium mb-2">
+                                    فرع المفارق
+                                </h2>
+                                <p className="text-[16px] font-medium">
+                                    الزقازيق - المفارق نهاية شارع المحافظة -أمام
+                                    السجل المدني برج قصر الحياة الدور الثاني
+                                </p>
+                                <p className="text-[16px] font-medium mt-2">
+                                    01111496647 - 0552313649
+                                </p>
+                            </div>
+                        </div>
+                        <div className="mt-5 flex gap-2">
+                            <div className="">
+                                <MdLocationPin
+                                    size={25}
+                                    className="text-black/80"
+                                />
+                            </div>
+                            <div className="">
+                                <h2 className="text-[18px] font-medium mb-2">
+                                    فرع المحطة
+                                </h2>
+                                <p className="text-[16px] font-medium">
+                                    الزقازيق - شارع الجلاء ( المحطة) - بجواز
+                                    بنزينة أبو عزيزة - أعلي صيدلية د.محمد حسانين
+                                    - الدور العاشر
+                                </p>
+                                <p className="text-[16px] font-medium mt-2">
+                                    01113979701
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {/* ............... */}
                 </div>
                 {/* LEFT END */}
 
