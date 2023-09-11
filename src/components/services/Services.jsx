@@ -1,8 +1,8 @@
 "use client";
 
-import { useAnimate, useInView, AnimatePresence } from "framer-motion";
+import { useInView, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { josefin_Sans } from "../../fonts";
 
 const Services = () => {
