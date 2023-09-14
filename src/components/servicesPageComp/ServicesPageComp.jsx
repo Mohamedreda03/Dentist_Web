@@ -19,7 +19,7 @@ const ServicesPageComp = ({ id, img, head, desc }) => {
             <img
                 src={img}
                 alt={head}
-                className="w-full h-[450px] lg:max-w-[50%] lg:h-auto object-cover rounded-md"
+                className="w-full h-[450px] lg:max-w-[48%] lg:h-auto object-cover rounded-md"
             />
             <div className="text-right text-black/80 flex flex-col justify-center p-[20px]">
                 <h2 className="text-[30px] text-center md:text-start lg:text-[40px] font-semibold mb-4">
