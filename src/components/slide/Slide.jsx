@@ -68,7 +68,7 @@ const Slide = () => {
     return (
         <>
             <div
-                className={`${tajawal.className} max-w-[1380px] mx-auto mb-[100px] px-[30px] pb-[40px] transform translate-y-[200px] opacity-0 transt duration-[1.5s] delay-100`}
+                className={`${tajawal.className} text-black/80 max-w-[1380px] mx-auto mb-[100px] px-[30px] pb-[40px] transform translate-y-[200px] opacity-0 transt duration-[1.5s] delay-100`}
                 ref={ref2}
                 style={{
                     opacity: inView2 ? 1 : 0,
@@ -90,7 +90,7 @@ const Slide = () => {
             </div>
             <div
                 className={`flex justify-center text-[50px] font-bold mb-[90px] ${kufam.className}
-                    before:absolute before:w-[0px] before:h-[2px] before:bg-blue-500 transition duration-700 delay-100 ${styles.title}`}>
+                    before:absolute before:w-[0px] before:h-[2px] text-black/80 before:bg-blue-500 transition duration-700 delay-100 ${styles.title}`}>
                 نتشرف دائما بخدمة عملائنا
             </div>
             <div
