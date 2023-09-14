@@ -24,9 +24,10 @@ const Services = () => {
 
                     {/* ............ */}
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[50px] gap-y-[40px]">
-                        <div
-                            className="opacity-0 transform translate-y-[100px] transition duration-1000 delay-[0.4s]"
+                    <div className="grid text-center grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[20px] gap-y-[40px]">
+                        <Link
+                            href={"/"}
+                            className="shadow-sm py-[25px] px-[10px] rounded-lg bg-[#e8eeef] opacity-0 transform translate-y-[100px] transition duration-1000 delay-[0.4s]"
                             ref={ref}
                             style={{
                                 transform: inView ? "translateY(0px)" : "",
@@ -35,20 +36,21 @@ const Services = () => {
                             <img
                                 src="/dental-implant.png"
                                 alt=""
-                                className="w-[50px] h-[50px] mb-3 rounded-full bg-[#e8eeef] p-[10px] text-white"
+                                className="w-[50px] h-[50px] mb-3 rounded-full bg-[#e8eeef] p-[10px] text-white mx-auto"
                             />
                             <h3 className="text-[20px] font-semibold">
                                 زراعة الأسنان
                             </h3>
-                            <p className="text-black/80 mt-2">
+                            {/* <p className="text-black/80 mt-2">
                                 يُطلق البعض على زراعة الأسنان أنها السِحر الخاص
                                 بعالم طب الأسنان، وذلك لما هنالك من مميزات
                                 وفوائد جمّة تقدمها الزراعة، ولكن ماذا عن زراعة
                                 الفك العلوي بالتحديد؟
-                            </p>
-                        </div>
-                        <div
-                            className="opacity-0 transform translate-y-[100px] transition duration-1000 delay-[0.6s]"
+                            </p> */}
+                        </Link>
+                        <Link
+                            href={"/"}
+                            className="shadow-sm py-[25px] px-[10px] rounded-lg bg-[#e8eeef] opacity-0 transform translate-y-[100px] transition duration-1000 delay-[0.6s]"
                             style={{
                                 transform: inView ? "translateY(0px)" : "",
                                 opacity: inView ? 1 : 0,
@@ -56,19 +58,20 @@ const Services = () => {
                             <img
                                 src="/clean-tooth.png"
                                 alt=""
-                                className="w-[50px] h-[50px] mb-3 rounded-full bg-[#e8eeef] p-[10px] text-white"
+                                className="w-[50px] h-[50px] mb-3 rounded-full bg-[#e8eeef] p-[10px] text-white mx-auto"
                             />
                             <h3 className="text-[20px] font-semibold">
                                 تجميل الأسنان
                             </h3>
-                            <p className="text-black/80 mt-2">
+                            {/* <p className="text-black/80 mt-2">
                                 هل تعانون من مشكلة اصفرار الاسنان؟ هل تزعجكم
                                 التغيرات الواضحة في لون أسنانكم عن الطبيعي؟ هل
                                 تبحثون عن طرق لعلاج تصبغات الاسنان والتخلص منها؟
-                            </p>
-                        </div>
-                        <div
-                            className="opacity-0 transform translate-y-[100px] transition duration-1000 delay-[0.8s]"
+                            </p> */}
+                        </Link>
+                        <Link
+                            href={"/"}
+                            className="shadow-sm py-[25px] px-[10px] rounded-lg bg-[#e8eeef] opacity-0 transform translate-y-[100px] transition duration-1000 delay-[0.8s]"
                             style={{
                                 transform: inView ? "translateY(0px)" : "",
                                 opacity: inView ? 1 : 0,
@@ -76,19 +79,20 @@ const Services = () => {
                             <img
                                 src="/root-canal.png"
                                 alt=""
-                                className="w-[50px] h-[50px] mb-3 rounded-full bg-[#e8eeef] p-[10px] text-white"
+                                className="w-[50px] h-[50px] mb-3 rounded-full bg-[#e8eeef] p-[10px] text-white mx-auto"
                             />
                             <h3 className="text-[20px] font-semibold">
                                 علاج جذور الأسنان
                             </h3>
-                            <p className="text-black/80 mt-2">
+                            {/* <p className="text-black/80 mt-2">
                                 هل تعانون من مشكلة اصفرار الاسنان؟ هل تزعجكم
                                 التغيرات الواضحة في لون أسنانكم عن الطبيعي؟ هل
                                 تبحثون عن طرق لعلاج تصبغات الاسنان والتخلص منها؟
-                            </p>
-                        </div>
-                        <div
-                            className="opacity-0 transform translate-y-[100px] transition duration-1000 delay-[1s]"
+                            </p> */}
+                        </Link>
+                        <Link
+                            href={"/"}
+                            className="shadow-sm py-[25px] px-[10px] rounded-lg bg-[#e8eeef] opacity-0 transform translate-y-[100px] transition duration-1000 delay-[1s]"
                             style={{
                                 transform: inView ? "translateY(0px)" : "",
                                 opacity: inView ? 1 : 0,
@@ -96,20 +100,21 @@ const Services = () => {
                             <img
                                 src="/drilling.png"
                                 alt=""
-                                className="w-[50px] h-[50px] mb-3 rounded-full bg-[#e8eeef] p-[10px] text-white"
+                                className="w-[50px] h-[50px] mb-3 rounded-full bg-[#e8eeef] p-[10px] text-white mx-auto"
                             />
                             <h3 className="text-[20px] font-semibold">
                                 التركيبات الثابتة
                             </h3>
-                            <p className="text-black/80 mt-2">
+                            {/* <p className="text-black/80 mt-2">
                                 يُطلق البعض على زراعة الأسنان أنها السِحر الخاص
                                 بعالم طب الأسنان، وذلك لما هنالك من مميزات
                                 وفوائد جمّة تقدمها الزراعة، ولكن ماذا عن زراعة
                                 الفك العلوي بالتحديد؟
-                            </p>
-                        </div>
-                        <div
-                            className="opacity-0 transform translate-y-[100px] transition duration-1000 delay-[1.2s]"
+                            </p> */}
+                        </Link>
+                        <Link
+                            href={"/"}
+                            className="shadow-sm py-[25px] px-[10px] rounded-lg bg-[#e8eeef] opacity-0 transform translate-y-[100px] transition duration-1000 delay-[1.2s]"
                             style={{
                                 transform: inView ? "translateY(0px)" : "",
                                 opacity: inView ? 1 : 0,
@@ -117,20 +122,21 @@ const Services = () => {
                             <img
                                 src="/braces.png"
                                 alt=""
-                                className="w-[50px] h-[50px] mb-3 rounded-full bg-[#e8eeef] p-[10px] text-white"
+                                className="w-[50px] h-[50px] mb-3 rounded-full bg-[#e8eeef] p-[10px] text-white mx-auto"
                             />
                             <h3 className="text-[20px] font-semibold">
                                 تقويم الأسنان
                             </h3>
-                            <p className="text-black/80 mt-2">
+                            {/* <p className="text-black/80 mt-2">
                                 يعد تقويم الأسنان من أهم إجراءات الأسنان
                                 التجميلية والعلاجية في نفس الوقت، ويتساءل الكثير
                                 من الناس ما هو أفضل تقويم اسنان؟ وكيف يمكن
                                 اختياره؟
-                            </p>
-                        </div>
-                        <div
-                            className="opacity-0 transform translate-y-[100px] transition duration-1000 delay-[1.4s]"
+                            </p> */}
+                        </Link>
+                        <Link
+                            href={"/"}
+                            className="shadow-sm py-[25px] px-[10px] rounded-lg bg-[#e8eeef] opacity-0 transform translate-y-[100px] transition duration-1000 delay-[1.4s]"
                             style={{
                                 transform: inView ? "translateY(0px)" : "",
                                 opacity: inView ? 1 : 0,
@@ -138,17 +144,17 @@ const Services = () => {
                             <img
                                 src="/baby-teeth.png"
                                 alt=""
-                                className="w-[50px] h-[50px] mb-3 rounded-full bg-[#e8eeef] p-[10px] text-white"
+                                className="w-[50px] h-[50px] mb-3 rounded-full bg-[#e8eeef] p-[10px] text-white mx-auto"
                             />
                             <h3 className="text-[20px] font-semibold">
                                 طب أسنان الأطفال
                             </h3>
-                            <p className="text-black/80 mt-2">
+                            {/* <p className="text-black/80 mt-2">
                                 هل تعانون من مشكلة اصفرار الاسنان؟ هل تزعجكم
                                 التغيرات الواضحة في لون أسنانكم عن الطبيعي؟ هل
                                 تبحثون عن طرق لعلاج تصبغات الاسنان والتخلص منها؟
-                            </p>
-                        </div>
+                            </p> */}
+                        </Link>
                     </div>
                 </div>
                 {/* .................................... */}
