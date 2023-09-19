@@ -15,7 +15,7 @@ const Footer = () => {
       >
         <Wrapper className="flex justify-between flex-col md:flex-row gap-[50px] md:gap-0">
           {/* LEFT START */}
-          <div className="grid gap-[50px] md:gap-[75px] lg:gap-[100px] flex-col grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-[40px] md:gap-[75px] lg:gap-[0px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {/* LOGO */}
             <div className="flex flex-col gap-3 shrink-0">
               <img src="/logo.png" alt="fas" className="w-[80px]" />
@@ -27,7 +27,7 @@ const Footer = () => {
             {/* LOGO END */}
             {/* MENU START */}
             <div className="flex flex-col gap-3 shrink-0 text-[16px] text-black">
-              <div className="font-oswald font-semibold text-[22px]">
+              <div className="font-oswald fot-semibold text-[22px]">
                 روابط سريعة
               </div>
               <Link
@@ -50,7 +50,7 @@ const Footer = () => {
               </Link>
               <Link
                 href={"/services"}
-                className="font-oswald font-medium uppercase cursor-pointer"
+                className="font-oswaldn font-medium uppercase cursor-pointer"
               >
                 الخدمات
               </Link>
