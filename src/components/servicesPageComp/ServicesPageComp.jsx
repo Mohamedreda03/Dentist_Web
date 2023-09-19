@@ -3,9 +3,10 @@
 import { useInView } from "framer-motion";
 import React, { useRef } from "react";
 
-const ServicesPageComp = ({ id, img, head, desc }) => {
+const ServicesPageComp = ({ img, head, desc, linkId }) => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
+
   return (
     <div
       className="flex lg:flex-row flex-col h-auto lg:even:flex-row-reverse gap-[50px] p-[20px]
@@ -18,6 +19,7 @@ const ServicesPageComp = ({ id, img, head, desc }) => {
       }}
     >
       <img
+        id={linkId}
         src={img}
         alt={head}
         className="w-full h-[320px] md:h-[450px] lg:max-w-[48%] lg:h-auto object-cover rounded-md"

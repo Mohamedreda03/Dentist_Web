@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  scroll-padding: 28rem;
 }
 .container {
-    max-width: 1380px;
-    margin: 0 auto;
-    padding: 0 30px;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
