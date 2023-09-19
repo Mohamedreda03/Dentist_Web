@@ -15,7 +15,7 @@ const Footer = () => {
       >
         <Wrapper className="flex justify-between flex-col md:flex-row gap-[50px] md:gap-0">
           {/* LEFT START */}
-          <div className="flex gap-[50px] md:gap-[75px] lg:gap-[100px] flex-col md:flex-row">
+          <div className="grid gap-[50px] md:gap-[75px] lg:gap-[100px] flex-col grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {/* LOGO */}
             <div className="flex flex-col gap-3 shrink-0">
               <img src="/logo.png" alt="fas" className="w-[80px]" />
@@ -138,7 +138,7 @@ const Footer = () => {
       <div
         lang="ar"
         dir="rtl"
-        className="flex justify-center p-[20px] flex-col md:flex-row gap-[10px] bg-[#d5dfe0] md:gap-0"
+        className="flex justify-center p-[20px] bg-[#d5dfe0]"
       >
         {/* RIGHT START */}
         <div className="flex gap-2 md:gap-5 text-center md:text-left flex-wrap justify-center"></div>
