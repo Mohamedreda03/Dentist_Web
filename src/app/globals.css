@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding: 28rem;
+    scroll-behavior: smooth;
+    scroll-padding: 28rem;
 }
 
 @media (width < 768px) {
-  html {
-    scroll-behavior: smooth;
-    scroll-padding: 20rem;
-  }
+    html {
+        scroll-behavior: smooth;
+        scroll-padding: 20rem;
+    }
 }
 
 .container {
-  max-width: 1380px;
-  margin: 0 auto;
-  padding: 0 30px;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
