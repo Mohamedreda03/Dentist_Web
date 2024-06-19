@@ -49,27 +49,27 @@ const Navbar = () => {
               />
             </Link>
             <ul className="flex items-center gap-[40px] text-[18px] font-semibold text-black/80 ">
-              <Link href={"/"}>
-                <li className="hover:text-black">الرئيسيه</li>
-              </Link>
-              <Link href={"/about"}>
-                <li className="hover:text-black">عن المركز</li>
-              </Link>
-              <Link href={"/team"}>
-                <li className="hover:text-black">الفريق الطبى</li>
-              </Link>
-              <Link href={"/services"}>
-                <li className="hover:text-black">الخدمات</li>
-              </Link>
-              <Link href={"/reviews"}>
-                <li className="hover:text-black">أراء العملاء</li>
-              </Link>
-              <Link href={"/offers"}>
-                <li className="hover:text-black">العروض</li>
-              </Link>
-              <Link href={"/articles"}>
-                <li className="hover:text-black">المقالات</li>
-              </Link>
+              <li className="hover:text-black">
+                <Link href={"/"}>الرئيسيه</Link>
+              </li>
+              <li className="hover:text-black">
+                <Link href={"/about"}>عن المركز</Link>
+              </li>
+              <li className="hover:text-black">
+                <Link href={"/team"}>الفريق الطبى</Link>
+              </li>
+              <li className="hover:text-black">
+                <Link href={"/services"}>الخدمات</Link>
+              </li>
+              <li className="hover:text-black">
+                <Link href={"/reviews"}>أراء العملاء</Link>
+              </li>
+              <li className="hover:text-black">
+                <Link href={"/offers"}>العروض</Link>
+              </li>
+              <li className="hover:text-black">
+                <Link href={"/articles"}>المقالات</Link>
+              </li>
             </ul>
           </div>
           <Link
