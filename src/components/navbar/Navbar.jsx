@@ -70,6 +70,9 @@ const Navbar = () => {
               <li className="hover:text-black">
                 <Link href={"/articles"}>المقالات</Link>
               </li>
+              <li className="hover:text-black">
+                <Link href={"/schedule"}>جدول المواعيد</Link>
+              </li>
             </ul>
           </div>
           <Link
